@@ -1,0 +1,49 @@
+<div class="cart" [ngClass]="cartClass()">
+  <div class="app-header">
+    <ion-toolbar>
+      <nav class="app-nav">
+        <button *ngIf="cart.open" ion-button clear (click)="cart.toggle()">
+          <ion-icon name="ios-close-circle-outline"></ion-icon>
+        </button>
+      </nav>
+    </ion-toolbar>
+  </div>
+
+  <div class="cart-body">
+    <div class="cart-totals" padding>
+      <h4>3 Items</h4>
+      <h4>Total: &euro;39</h4>
+    </div>
+
+    <ion-list class="shop-list">
+      <ion-item class="shop-item" *ngFor="let product of products; let i = index">
+        <ion-thumbnail item-start class="shop-item-thumb">
+          <ion-avatar>
+            <img src="//cdn.shopify.com/s/files/1/0441/8845/products/big-bud-marijuana-seeds_large.jpg?v=1524644498" alt="">
+          </ion-avatar>
+        </ion-thumbnail>
+
+        <div class="shop-item-body">
+          <div class="shop-item-info">
+            <h1>{{product.title}} </h1>
+            <h2> &euro;{{product.money}} per gram</h2>
+          </div>
+
+          <div class="shop-item-quantity">
+            <button clear (tap)="toggleQuantity(i)">
+              <ion-icon name="ios-arrow-up"></ion-icon>
+            </button>
+
+            <span [ngClass]="{active: product.amount > 0}">{{product.amount}}g</span>
+            <button clear [disabled]="product.amount < 1" (tap)="toggleQuantity(i, false)">
+              <ion-icon name="ios-arrow-down"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </div>
+</div>
+
+<button *ngIf="!cart.atCheckout" [ngClass]="{'is-shown': cart.open}" class="cart-checkout" ion-button block color="primary"
+  (tap)="checkout()">CHECKOUT</button>

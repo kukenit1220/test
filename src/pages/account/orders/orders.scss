@@ -1,0 +1,12 @@
+.order-totals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: color($colors, medium);
+  padding: 0.8rem 1.6rem 0.7rem;
+  p {
+    color: darken(color($colors, gray), 10);
+    font-size: 1.6rem;
+    margin: 0;
+  }
+}

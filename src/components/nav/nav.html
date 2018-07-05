@@ -1,0 +1,17 @@
+<nav class="app-nav" padding>
+  <button *ngIf="back" ion-button clear (click)="goBack()">
+    <ion-icon name="md-arrow-back"></ion-icon>
+  </button>
+
+  <button *ngIf="!back" ion-button clear (click)="profile()">
+    <ion-icon name="ios-contact"></ion-icon>
+  </button>
+
+  <button ion-button clear class="nav-cart-button" (click)="cart.toggle()">
+    <ion-icon name="md-basket"></ion-icon>
+  </button>
+
+  <button ion-button clear end menuToggle="right">
+    <ion-icon name="ios-menu"></ion-icon>
+  </button>
+</nav>

@@ -1,0 +1,16 @@
+@import '../auth';
+.login {
+  img {
+    margin: -1rem auto 1rem;
+    max-width: 100%;
+    width: 300px;
+  }
+}
+
+.forgot-pass-link {
+  margin: 2rem 0;
+  a {
+    color: color($colors, primary);
+    font-weight: 700;
+  }
+}

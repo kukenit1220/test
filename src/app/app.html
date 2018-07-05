@@ -1,0 +1,24 @@
+<ion-menu type="overlay" side="right" [content]="content" id="menu">
+  <ion-content>
+    <div class="menu-user">
+      <h1>Oliver Millington</h1>
+      <p>
+        Member No:
+        <span>12345678</span>
+      </p>
+    </div>
+
+    <ion-list>
+      <button ion-item menuClose="menu" *ngFor="let page of pages" (click)="openPage(page)">
+        {{page.title}}
+      </button>
+    </ion-list>
+
+    <button menuClose="menu" class="menu-logout" ion-button clear (click)="_auth.logout(this)">
+      <span>LOGOUT</span>
+      <ion-icon name="md-log-out"></ion-icon>
+    </button>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content></ion-nav>

@@ -1,0 +1,29 @@
+<ion-content class="register">
+  <nav class="register-nav">
+    <div class="register-logo">
+      <ion-icon (click)="back()" name="ios-arrow-round-back"></ion-icon>
+      <img src="assets/imgs/logo-standalone-crossless.svg">
+    </div>
+
+
+    <div class="register-steps">
+      <span class="register-step is-active">1</span>
+      <span class="register-divide">
+        <span>&nbsp;</span>
+      </span>
+      <span class="register-step">2</span>
+    </div>
+  </nav>
+
+  <div class="register-form auth-form">
+    <div class="form-heading">
+      <h1>YOUR DETAILS</h1>
+    </div>
+    <form [formGroup]="form"  (ngSubmit)="register()">
+      <formly-form [model]="model" [fields]="fields" [form]="form" [options]="options"></formly-form>
+
+        <button ion-button block type="submit" [disabled]="!form.valid" >NEXT STEP</button>
+
+    </form>
+  </div>
+</ion-content>

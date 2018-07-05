@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="322px" height="197px" viewBox="0 0 322 197" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>valid</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="valid" transform="translate(2.000000, 1.000000)">
+            <rect id="Rectangle-2" stroke="#21D900" stroke-width="3" fill="#FFFFFF" x="0" y="0.805555556" width="318.19209" height="193.194444" rx="3"></rect>
+            <path d="M173.107345,138 L285.19774,138" id="Stroke-5849" stroke="#21D900" stroke-width="3" stroke-linejoin="round"></path>
+            <rect id="Path" fill="#21D900" fill-rule="nonzero" x="237.644068" y="0" width="81.3559322" height="39.7222222"></rect>
+            <polyline id="Stroke-2756" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="288.265537 10.8333333 276.592729 27.0833333 271.99435 22.490942"></polyline>
+            <path d="M173.107345,110 L285.19774,110" id="Stroke-5850" stroke="#21D900" stroke-width="3" stroke-linejoin="round"></path>
+            <path d="M173.107345,82 L285.19774,82" id="Stroke-5851" stroke="#21D900" stroke-width="3" stroke-linejoin="round"></path>
+            <path d="M173.107345,54 L229.152542,54" id="Stroke-5852" stroke="#21D900" stroke-width="3" stroke-linejoin="round"></path>
+            <path d="M89.039548,153.274691 L25.9887006,153.274691 L25.9887006,125.188272 C25.9887006,125.188272 47.0056497,104.123457 75.0282486,104.123457 L75.0282486,90.0802468 C75.0282486,90.0802468 61.0169492,83.0586421 61.0169492,61.9938272 C61.0169492,47.9506173 61.0169492,33.9074073 89.039548,33.9074073 C117.062147,33.9074073 117.062147,47.9506173 117.062147,61.9938272 C117.062147,83.0586421 103.050847,90.0802468 103.050847,90.0802468 L103.050847,104.123457 C131.073446,104.123457 152.090395,125.188272 152.090395,125.188272 L152.090395,153.274691 L89.039548,153.274691 L89.039548,153.274691 Z" id="Stroke-5853" stroke="#21D900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

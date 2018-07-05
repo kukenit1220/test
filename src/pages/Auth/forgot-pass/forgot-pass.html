@@ -1,0 +1,21 @@
+<ion-content class="forgot">
+
+  <nav class="register-nav">
+    <div class="register-logo">
+      <ion-icon (click)="back()" name="ios-arrow-round-back"></ion-icon>
+      <img src="assets/imgs/logo-standalone-crossless.svg">
+    </div>
+  </nav>
+
+  <div class="register-form auth-form">
+    <div class="form-heading">
+      <h1>YOUR EMAIL</h1>
+    </div>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <formly-form [model]="model" [fields]="fields" [form]="form" [options]="options"></formly-form>
+      <button ion-button block type="submit" [disabled]="!form.valid">SEND</button>
+    </form>
+
+  </div>
+
+</ion-content>

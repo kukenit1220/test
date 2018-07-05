@@ -1,0 +1,231 @@
+.account-user {
+  background: darken(color($colors, gray), 10);
+  color: #fff;
+  padding: 1.25rem 1.5rem 1.5rem;
+  h3,
+  p {
+    margin: 0;
+  }
+  h3 {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+  }
+  p {
+    font-weight: 600;
+    span {
+      color: color($colors, primary);
+    }
+  }
+}
+
+.account-order {}
+
+// page-profile {
+//   .section_heading {
+//     font-size: 0.8rem;
+//   }
+//   .section_heading h1 {
+//     background: #fafafa;
+//     display: inline-block;
+//     padding: 0 1rem;
+//     color: #515b5e;
+//     position: relative;
+//     z-index: 2;
+//     text-transform: uppercase;
+//   }
+//   .section_heading {
+//     text-align: center;
+//     position: relative;
+//     font-weight: 700;
+//     color: #515b5e;
+//     font-size: 1.2rem;
+//   }
+//   .section_heading::before {
+//     position: absolute;
+//     border-top: 1px solid;
+//     content: ' ';
+//     top: 55%;
+//     left: 0;
+//     width: 100%;
+//   }
+//   .title-name {
+//     display: flex;
+//     justify-content: center;
+//     margin: auto;
+//     color: white;
+//     padding: 5px;
+//     background-color: #515b5e;
+//     .name {
+//       margin-left: 23%;
+//       margin-right: 23%
+//     }
+//   }
+//   .pass {
+//     border: 1px solid;
+//     margin-bottom: 5px;
+//   }
+//   .scroll-content {
+//     padding-bottom: 0px !important;
+//     background: #fafafa;
+//   }
+//   .over {
+//     border: 1px solid;
+//     border-radius: 50%;
+//     height: 20px;
+//     width: 20px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     font-size: 23px;
+//     /* font-weight: 400; */
+//   }
+//   ion-navbar .toolbar-content {
+//     position: initial !important;
+//     display: contents;
+//   }
+//   .item-md, .item-ios {
+//     padding-left: 0;
+//   }
+//   .card-md,.card-ios {
+//     margin: 0;
+//     width: 100%;
+//   }
+//   ion-navbar {
+//     .toolbar-content {
+//       position: fixed;
+//       left: 44%;
+//       ion-icon {
+//         font-size: 2.5rem;
+//         color: #424242;
+//       }
+//     }
+//   }
+//   .toolbar-background-md ,.toolbar-background-ios{
+//     background-color: white;
+//   }
+//   .toolbar-md,.toolbar-ios {
+//     padding: 0;
+//     border-bottom: 1px solid #c8c7cc;
+//   }
+//   .header-md::after {
+//     background-image: unset;
+//   }
+//   .segment-md .segment-button {
+//     border-bottom-width: 1px;
+//     color: #222222;
+//     font-size: 1.5rem;
+//     border-bottom-color: black;
+//   }
+//   .segment-ios .segment-button{
+//     color: #222222;
+//     border: unset;
+//     font-size: 1.5rem;
+//     border-bottom: 1px solid;
+//     max-width: unset;
+//   }
+//   .segment-ios .segment-button.segment-activated{
+//     background-color: unset;
+//     border-bottom: 2px solid;
+//     border-color: #14ff14;
+//   }
+//   .segment-md .segment-button.segment-activated,.segment-ios .segment-button.segment-activated {
+//     border-bottom-width: 2px;
+//     color: #00ff00
+//   }
+//   .add-remove {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 30%;
+//     padding: 0.75rem 1rem;
+//     position: absolute;
+//     right: 10px;
+//     bottom: 11px;
+//   }
+//   //.button-md {
+//   //  border-radius: 50%;
+//   //}
+//   ion-icon {
+//     font-size: unset;
+//   }
+//   .item-md ion-thumbnail[item-start] {
+//     margin-left: 8px;
+//   }
+//   .item-md ion-avatar img {
+//     border-radius: unset;
+//   }
+//   .button-md:hover:not(.disable-hover) {
+//     background-color: unset;
+//   }
+//   .button-clear-md:hover:not(.disable-hover) {
+//     background-color: unset;
+//   }
+//   .button-clear-md.activated {
+//     background-color: unset;
+//   }
+//   .button-md.activated {
+//     background-color: unset;
+//   }
+//   // pending #3273dc
+//   .card-title-md ,.card-title-ios{
+//     align-items: center;
+//     font-size: 2rem;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+//   .button-clear-md,.button-clear-ios {
+//     color: black;
+//   }
+//   #isActive {
+//     display: none;
+//   }
+//   #isActive2 {
+//     display: none;
+//   }
+//   #isActive3 {
+//     display: none;
+//   }
+//   #isActive4 {
+//     display: none;
+//   }
+//   .media-content {
+//     flex-basis: auto;
+//     flex-grow: 1;
+//     flex-shrink: 1;
+//     text-align: left;
+//   }
+//   .media-content p {
+//     margin: 0 !important;
+//   }
+//   .order_meta {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     font-size: 2rem;
+//   }
+//   .content {
+//     h1 {
+//       color: #515b5e
+//     }
+//   }
+//   ion-item.item.item-block.item-md,.ion-item.item.item-block.item-ios {
+//     border-bottom: 1px solid rgba(219, 219, 219, 0.5);
+//   }
+//   .field {
+//     position: relative;
+//     text-align: left;
+//     margin-bottom: 0.75rem !important;
+//   }
+//   ion-input, ion-textarea {
+//     border: 1px solid black;
+//     border-radius: 3px;
+//     margin-bottom: 1rem;
+//     background: white;
+//   }
+//   ion-item.item.item-block.item-md:hover {
+//     border-color: #14ff14;
+//   }
+// }
+// .text-input-ios{
+//   margin-left: 11px;
+// }

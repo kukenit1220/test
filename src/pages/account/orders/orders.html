@@ -1,0 +1,39 @@
+<ion-card *ngFor="let order of orders;" class="account-order">
+  <div padding-top padding-horizontal (tap)="toggleOrderVisibility(order)">
+    <h2>
+      #{{order.number}} - {{order.status}}
+    </h2>
+
+    <p no-margin padding-bottom>{{order.date}} - {{order.date}}</p>
+  </div>
+
+  <ion-list *ngIf="order.show" class="shop-list">
+    <div class="order-totals">
+      <p>3 Items</p>
+      <p>Total: &euro;39</p>
+    </div>
+
+    <ion-item class="shop-item is-small" *ngFor="let product of order.products;" col-12 ion-item>
+      <ion-thumbnail item-start class="shop-item-thumb">
+        <ion-avatar>
+          <img src="//cdn.shopify.com/s/files/1/0441/8845/products/big-bud-marijuana-seeds_large.jpg?v=1524644498" alt="">
+        </ion-avatar>
+      </ion-thumbnail>
+
+      <div class="shop-item-body">
+        <div class="shop-item-info">
+          <h1>{{product.title}} </h1>
+          <h2> &euro;{{product.money}} per gram</h2>
+        </div>
+
+        <div class="shop-item-quantity">
+          <span>3g</span>
+        </div>
+      </div>
+    </ion-item>
+
+    <div padding>
+      <button ion-button block small color="primary">REORDER</button>
+    </div>
+  </ion-list>
+</ion-card>

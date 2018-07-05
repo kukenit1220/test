@@ -1,0 +1,142 @@
+<ion-header class="app-header">
+  <ion-toolbar>
+    <app-nav back="true"></app-nav>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <div padding>
+      <h4 padding-bottom no-margin>Delivery</h4>
+
+      <ion-item>
+        <ion-label>Address</ion-label>
+        <ion-select>
+          <ion-option value="">100 The Road, This City</ion-option>
+          <ion-option value="">200 The Street, That City</ion-option>
+          <ion-option value="">300 The Avenue, The City</ion-option>
+        </ion-select>
+      </ion-item>
+      <h4>Contact</h4>
+
+      <ion-item>
+        <ion-input type="text" placeholder="Name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="email" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="tel" placeholder="Phone Number"></ion-input>
+      </ion-item>
+    </div>
+
+    <h4 padding-horizontal no-margin>Payment</h4>
+
+    <ion-list radio-group margin>
+      <ion-item>
+        <ion-label>Paypal</ion-label>
+        <ion-radio value="paypal" checked></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Bank Transfer</ion-label>
+        <ion-radio value="bank_transfer"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Cash on Delivery</ion-label>
+        <ion-radio value="cash_delivery"></ion-radio>
+      </ion-item>
+    </ion-list>
+
+    <div padding-horizontal padding-bottom>
+      <button ion-button block color="primary">COMPLETE ORDER</button>
+    </div>
+  </form>
+</ion-content>
+
+<app-cart></app-cart>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ion-content text-center class="bg">
+  <ion-card style="margin-top:0% !important">
+    <div class="section_heading">
+      <h1>ADDRESS</h1>
+    </div>
+    <div class="flex">
+      <div class="flex">
+        <ion-checkbox [(ngModel)]="PASSPORT" mode="ios"></ion-checkbox>
+
+        <ion-label>
+          ADDRESS 1
+        </ion-label>
+      </div>
+      <div class="flex">
+        <ion-checkbox [(ngModel)]="DRIVING" mode="ios"></ion-checkbox>
+
+        <ion-label>
+          ADDRESS 2
+        </ion-label>
+      </div>
+
+    </div>
+    <ion-item>
+      <ion-input type="text" placeholder="Address"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="Address"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="Notes"></ion-input>
+    </ion-item>
+    <div class="section_heading">
+      <h1>CONTACT</h1>
+    </div>
+
+    <ion-item>
+      <ion-input type="text" placeholder="First Name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="Last Name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="Phone Number"></ion-input>
+    </ion-item>
+
+    <div class="section_heading">
+      <h1>PAYMENT</h1>
+    </div>
+
+
+    <div class="flex">
+      <div class="flex">
+        <ion-checkbox [(ngModel)]="cash_delivery" mode="ios"></ion-checkbox>
+        <ion-label>
+          CASH ON DELIVERY
+        </ion-label>
+      </div>
+      <div class="flex">
+        <ion-checkbox [(ngModel)]="bank_transfer" mode="ios"></ion-checkbox>
+        <ion-label>
+          BANK TRANSFER
+        </ion-label>
+      </div>
+    </div>
+    <button ion-button block (click)="completeOrder()">
+      <b>COMPLETE YOUR ORDER</b>
+    </button>
+  </ion-card>
+
+</ion-content> -->

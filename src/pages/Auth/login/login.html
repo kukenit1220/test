@@ -1,0 +1,23 @@
+<ion-content>
+  <section class="auth">
+    <div class="login auth-form">
+      <img src="assets/imgs/logo.svg" alt="Weedr Logo">
+      <form [formGroup]="form" (ngSubmit)="login()">
+
+        <formly-form [model]="model" [fields]="fields" [form]="form" [options]="options"></formly-form>
+        <p class="forgot-pass-link">Forgot your password?
+          <a (click)="forgotPass()">Click Here</a>
+        </p>
+
+        <button color="primary" ion-button block type="submit" [disabled]="!form.valid">
+          SIGIN IN & SHOP
+        </button>
+      </form>
+      <p class="section_heading">OR</p>
+
+      <button color="gray" ion-button (click)="register()">
+        CREATE ACCOUNT
+      </button>
+    </div>
+  </section>
+</ion-content>

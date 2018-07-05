@@ -1,0 +1,22 @@
+.segment {
+  background: #fff;
+  .segment-button {
+    border: unset;
+    color: #333;
+    border-bottom: 2px solid #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: unset !important;
+  }
+  .segment-activated {
+    background-color: unset !important;
+    border-color: color($colors, primary);
+    color: color($colors, primary-dark) !important;
+  }
+}
+
+.segment-ios {
+  border-bottom: 1px solid color($colors, medium);
+}

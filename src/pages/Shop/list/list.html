@@ -1,0 +1,63 @@
+<ion-header class="app-header">
+  <ion-toolbar>
+    <app-nav></app-nav>
+  </ion-toolbar>
+
+  <ion-segment [(ngModel)]="segment">
+    <ion-segment-button value="weed" (click)="changeTab()">
+      WEED
+    </ion-segment-button>
+    <ion-segment-button value="extract" (click)="changeTab()">
+      EXTRACT
+    </ion-segment-button>
+    <ion-segment-button value="medical" (click)="changeTab()">
+      MEDICAL
+    </ion-segment-button>
+    <ion-segment-button value="other" (click)="changeTab()">
+      OTHER
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <ion-spinner name="bubbles" *ngIf="isShow"></ion-spinner>
+  <ion-list class="shop-list">
+    <div *ngIf="isShow">
+      <div class="empty-ticket" *ngFor="let item of [1,2,3,4,5] ">
+        <div class="avatar"></div>
+        <div class="data">
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+    <ion-item class="shop-item" *ngFor="let product of products; let i = index; showData">
+      <ion-thumbnail item-start class="shop-item-thumb">
+        <ion-avatar>
+          <img src="{{product.product_image}}" alt="">
+          <!-- <img *ngIf="i % 2 != 0" src="//cdn.shopify.com/s/files/1/0441/8845/products/big-bud-marijuana-seeds-1_medium@2x.jpg?v=1524644498"
+            alt=""> -->
+        </ion-avatar>
+      </ion-thumbnail>
+
+      <div class="shop-item-body">
+        <div class="shop-item-info">
+          <h1 (click)="productDetail()">{{product.title}} </h1>
+          <h2> &euro;{{product.price}} per gram</h2>
+        </div>
+
+        <div class="shop-item-quantity">
+          <button clear (tap)="toggleQuantity(i)">
+            <ion-icon name="ios-arrow-up"></ion-icon>
+          </button>
+          <span [ngClass]="{active: product.amount > 0}">{{product.amount}}g</span>
+          <button clear [disabled]="product.amount < 1" (tap)="toggleQuantity(i, false)">
+            <ion-icon name="ios-arrow-down"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<app-cart></app-cart>

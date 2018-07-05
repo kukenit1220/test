@@ -1,0 +1,87 @@
+
+.form-heading {
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+  color: color($colors, grey);
+  font-size: 1.2rem;
+  h1 {
+    background: color($colors, light);
+    display: inline-block;
+    padding: 0 1rem;
+    color: color($colors, grey);
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+  }
+  &::before {
+    position: absolute;
+    border-top: 1px solid;
+    content: ' ';
+    top: 55%;
+    left: 0;
+    width: 100%;
+  }
+}
+.item{
+  background-color: unset;
+}
+formly-form{
+  &+.button{
+    margin-top: 1.5rem
+  }
+}
+.item-input,
+.item-select {
+  border-radius: $border-radius;
+  border: 1px solid color($colors, gray-light);
+  height: 3.4rem;
+  background-color: white;
+  margin-top: 0.5rem;
+  &+.item-input,
+  &+.item-select,
+  &.input-has-focus {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  }
+  input {
+    margin: 0;
+  }
+}
+
+.list[radio-group] {
+  border: 1px solid color($colors, gray-light);
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+.item.item-radio {
+  border: unset !important;
+  &+.item.item-radio {
+    border-top: 1px solid color($colors, gray-light);
+  }
+  .item-inner {
+    border: unset;
+  }
+}
+
+.item.item-radio-checked {
+  background: color($colors, grey);
+  .item-inner {
+    border: unset;
+  }
+  .radio-checked {
+    border-color: #fff;
+  }
+  .radio-inner {
+    border-color: #fff;
+    color: #fff;
+  }
+  .label {
+    color: #fff;
+  }
+  .radio-md {
+    .radio-inner {
+      background-color: #fff;
+    }
+  }
+}

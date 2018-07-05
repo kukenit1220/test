@@ -1,0 +1,25 @@
+nav.app-nav {
+  border-bottom: 1px solid color($colors, medium);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  button {
+    padding: 0;
+    height: auto;
+    margin: 0 !important;
+    min-width: 0 !important;
+  }
+  ion-icon.icon {
+    font-size: 2.5rem;
+    color: color($colors, gray);
+    padding: 0;
+  }
+}
+
+.nav-cart-button {
+  .icon {
+    color: color($colors, primary) !important;
+  }
+}

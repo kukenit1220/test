@@ -1,0 +1,29 @@
+@import "../register";
+.register-form p {
+  margin-top: 0;
+}
+
+.register-id-example {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  figure {
+    width: 48%;
+    margin: 0;
+  }
+}
+
+.register-id-upload {
+  text-align: left;
+  margin: 1.5rem 0;
+  button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon {
+    margin-right: 2rem;
+    font-size: 36px;
+  }
+}

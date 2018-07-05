@@ -1,0 +1,29 @@
+<ion-header class="app-header">
+  <ion-toolbar>
+    <app-nav back="true"></app-nav>
+  </ion-toolbar>
+
+  <ion-segment [(ngModel)]="segment">
+    <ion-segment-button value="ORDERS">ORDERS</ion-segment-button>
+    <ion-segment-button value="ADDRESSES">ADDRESSES </ion-segment-button>
+    <ion-segment-button value="DETAILS">DETAILS</ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <div class="account-user">
+    <h3>Oliver Millington</h3>
+    <p>
+      Member No:
+      <span>12345678</span>
+    </p>
+  </div>
+
+  <div [ngSwitch]="segment">
+    <account-orders *ngSwitchCase="'ORDERS'"></account-orders>
+    <account-addresses *ngSwitchCase="'ADDRESSES'"></account-addresses>
+    <account-details *ngSwitchCase="'DETAILS'"></account-details>
+  </div>
+</ion-content>
+
+<app-cart></app-cart>

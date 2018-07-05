@@ -1,0 +1,17 @@
+.app-header {
+  ion-toolbar {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .toolbar-md {
+    padding-top: 0;
+  }
+  .toolbar-background {
+    background-color: white;
+  }
+}
+
+.app-header-menu {
+  display: inherit !important;
+}
